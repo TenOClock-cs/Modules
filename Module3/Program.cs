@@ -1,5 +1,5 @@
 ﻿using System;
-
+using static Module34;
 class MainClass
 {
     public static void Module33()
@@ -17,6 +17,7 @@ class MainClass
     public static void Main(string[] args)
     {
         Module33();
+        Module34.DayOfWeek();
     }
 }
 
