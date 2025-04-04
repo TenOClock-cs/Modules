@@ -9,6 +9,7 @@ public class Module34
         MyFavoriteDay = DaysOfWeek.Friday;
 
         Console.WriteLine(MyFavoriteDay);
+        
     }
 }
 
