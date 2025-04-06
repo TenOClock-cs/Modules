@@ -91,7 +91,7 @@ class Module5
 
     }
 
-    static void ToString((string Name, string LastName, int Age, bool HasPet, int PetCount, string[] PetNames, int FavColorsCount, string[] FavColorNames) User)
+    static void PrintUser((string Name, string LastName, int Age, bool HasPet, int PetCount, string[] PetNames, int FavColorsCount, string[] FavColorNames) User)
     {
         Console.WriteLine("Имя: " + User.Name);
         Console.WriteLine("Фамилия: " + User.LastName);
@@ -112,6 +112,6 @@ class Module5
     public static void Main(string[] args)
     {
         var usr = NewUser();
-        ToString(usr);
+        PrintUser(usr);
     }
 }
