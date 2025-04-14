@@ -9,9 +9,9 @@ using Module7;
 
 namespace Module7
 {
-    internal static class Validator
+    internal static class Validator // Статический класс который можно использовать для валидации
     {
-        public static bool IsValid(string emailAddress) {
+        public static bool IsValid(string emailAddress) { //Валидация e-mail
             try
             {
                 MailAddress m = new MailAddress(emailAddress);
@@ -24,7 +24,7 @@ namespace Module7
             }
         }
 
-        public static bool IsValid(Customer customer, DeliveryType deliveryType) {
+        public static bool IsValid(Customer customer, DeliveryType deliveryType) { // Перегружаем метод валидации
 
             return customer.CustomerType == CustomerType.Fiz || (customer.CustomerType == CustomerType.Jur && deliveryType.GetType().Name != "HomeDelivery");
             

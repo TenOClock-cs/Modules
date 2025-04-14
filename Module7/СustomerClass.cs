@@ -11,7 +11,7 @@ namespace Module7
         internal CustomerData CustomerData;
         protected CustomerType customerType;
         public abstract CustomerType CustomerType { get; }
-        public Customer(CustomerData data) => CustomerData = data;
+        protected Customer(CustomerData data) => CustomerData = data;
 
         public string toString()
         {
@@ -43,7 +43,7 @@ namespace Module7
 
         
 
-        public CustomerData(string name, string telephone, string email)
+        internal CustomerData(string name, string telephone, string email)
         {
             this.name = name;
             this.telephone = telephone;
